@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd-sourced Environmental Data Collection</title>
+    <link rel="stylesheet" href="contribute.css">
+    <style>
+        /* Additional CSS styles will go here */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png.jpg" alt="Website Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Data Collection</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <section class="observation-details-section">
+            <div class="container"5>
+                <h2>Observation Details</h2>
+                <div class="category-selection">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="air-quality">Air Quality</option>
+                        <option value="water-pollution">Water Pollution</option>
+                        <option value="wildlife-sightings">Wildlife Sightings</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-fields">
+                    <div class="form-field">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="notes">Notes:</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </header>
+    <section class="upload-section">
+        <h2>Upload Section</h2>
+        <div class="upload-container">
+            <div class="upload-item photo-upload">
+                <label for="photo">Photo Upload:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                <p>Drag and drop or click to upload</p>
+            </div>
+            <div class="upload-item data-files">
+                <label for="data-files">Data Files:</label>
+                <input type="file" id="data-files" name="data-files" multiple accept=".xlsx, .xls, .csv, .doc, .docx, .pdf">
+                <p>Drag and drop or click to upload</p>
+            </div>
+        </div>
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <button id="submit-btn" class="submit-button">Submit</button>
+        </section>
+        <script>
+            // Add event listener to the button
+            document.getElementById("submit-btn").addEventListener("click", function() {
+                // Redirect the user to the "thank.html" page
+                window.location.href = "thank.html";
+            });
+        </script>
+
+        
+    </section>
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="footer-content">
+        <div class="policy-links">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <span>|</span>
+            <a href="/terms-of-service">Terms of Service</a>
+        </div>
+        <div class="copyright-info">
+            <p>&copy; 2024 YourWebsiteName. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    
+</body>
+</html>

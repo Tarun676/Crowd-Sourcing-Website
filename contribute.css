@@ -1,0 +1,290 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('c3.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* Enhancements for Category Selection */
+/* Enhancements for Category Selection */
+
+.category-selection {
+    margin-bottom: 20px;
+    position: relative; /* Relative positioning for pseudo-element */
+}
+
+.category-selection label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold; /* Make the label bold */
+}
+
+.category-selection select {
+    width: 100%;
+    padding: 12px; /* Increase padding for better touch target */
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #555; /* Increase border thickness */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Darken text color */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: border-color 0.3s, background-color 0.3s; /* Add transition effect */
+    outline: none; /* Remove default outline */
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow for Safari */
+    -moz-appearance: none; /* Remove default arrow for Firefox */
+}
+
+.category-selection select::-ms-expand {
+    display: none; /* Remove default arrow for IE */
+}
+
+.category-selection::before {
+    content: "\25BC"; /* Unicode arrow character */
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure pseudo-element doesn't interfere with select */
+}
+
+.category-selection select:hover {
+    border-color: #333; /* Darken border color on hover */
+    background-color: #e0e0e0; /* Lighten background color on hover */
+}
+
+/* Overall Enhancements */
+
+.form-fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-field {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 2px solid #ccc; /* Decrease border thickness */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: calc(45% - 10px); /* Adjust the width as needed */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s; /* Add transition effect for box shadow */
+}
+
+.form-field:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold; /* Make the label bold */
+}
+
+.form-field input[type="text"],
+.form-field input[type="date"],
+.form-field input[type="time"],
+.form-field textarea {
+    width: calc(100% - 24px); /* Adjust the input width */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+.form-field input[type="text"]:focus,
+.form-field input[type="date"]:focus,
+.form-field input[type="time"]:focus,
+.form-field textarea:focus {
+    border-color: #3498db;
+}
+.form-field {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 4px solid #333; /* Increase border thickness */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: calc(45% - 10px); /* Adjust the width as needed */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s; /* Add transition effect for box shadow */
+}
+
+
+
+
+/* Upload Section */
+.upload-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -30px; /* Adjust margin to overlap with header */
+    margin-bottom: 50px; /* Bottom margin */
+}
+
+.upload-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center; /* Centered heading */
+    font-weight: bold; /* Thicker font */
+}
+
+.upload-container {
+    display: flex;
+    justify-content: center; /* Center contents horizontally */
+}
+
+.upload-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 80%; /* Set width */
+    max-width: 600px; /* Max width */
+    text-align: center; /* Center contents */
+}
+
+.upload-item label {
+    font-weight: bold;
+    color: #555;
+    font-size: 20px; /* Increased font size */
+    letter-spacing: 1px; /* Increased letter spacing */
+}
+
+.upload-item input[type="file"] {
+    display: none;
+}
+
+.upload-item p {
+    margin-top: 20px;
+    color: #777;
+    font-size: 16px; /* Increased font size */
+}
+
+.upload-item input[type="file"] + label {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px; /* Increased font size */
+}
+
+.upload-item input[type="file"] + label:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+/* Submit Button */
+.submit-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+/* Footer Section */
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.policy-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.policy-links span {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.policy-links a:hover {
+    text-decoration: underline;
+}

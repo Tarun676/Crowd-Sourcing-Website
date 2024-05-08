@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Water Quality Survey</h1>
+        <form>
+            <div class="question">
+                <label for="consume_water">How often do you consume tap water?</label>
+                <select id="consume_water" name="consume_water">
+                    <option value="daily">Daily</option>
+                    <option value="occasionally">Occasionally</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="taste_water">How would you rate the taste of your tap water?</label>
+                <select id="taste_water" name="taste_water">
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                    <option value="poor">Poor</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="filtration_system">Do you use any water filtration system at home?</label>
+                <select id="filtration_system" name="filtration_system">
+                    <option value="regularly">Yes, regularly</option>
+                    <option value="occasionally">Yes, occasionally</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="concern_contaminants">Are you concerned about contaminants in your tap water?</label>
+                <select id="concern_contaminants" name="concern_contaminants">
+                    <option value="very_concerned">Very concerned</option>
+                    <option value="somewhat_concerned">Somewhat concerned</option>
+                    <option value="not_concerned">Not concerned</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="water_discoloration">Have you ever experienced water discoloration from your tap?</label>
+                <select id="water_discoloration" name="water_discoloration">
+                    <option value="frequently">Yes, frequently</option>
+                    <option value="occasionally">Yes, occasionally</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="water_quality_notices">How often do you receive notices about water quality issues?</label>
+                <select id="water_quality_notices" name="water_quality_notices">
+                    <option value="frequently">Frequently</option>
+                    <option value="occasionally">Occasionally</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="satisfaction_water">How satisfied are you with the overall quality of your tap water?</label>
+                <select id="satisfaction_water" name="satisfaction_water">
+                    <option value="very_satisfied">Very satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="very_dissatisfied">Very dissatisfied</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="tap_water_safety">Do you believe that your tap water is safe for drinking without any additional treatment?</label>
+                <select id="tap_water_safety" name="tap_water_safety">
+                    <option value="absolutely_safe">Yes, absolutely safe</option>
+                    <option value="some_concerns">Yes, but with some concerns</option>
+                    <option value="not_safe">No, not safe without treatment</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="unusual_odor">How often do you notice any unusual odor from your tap water?</label>
+                <select id="unusual_odor" name="unusual_odor">
+                    <option value="frequently">Frequently</option>
+                    <option value="occasionally">Occasionally</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="aware_water_conservation">Are you aware of any water conservation efforts in your community?</label>
+                <select id="aware_water_conservation" name="aware_water_conservation">
+                    <option value="actively_involved">Yes, actively involved</option>
+                    <option value="aware_not_involved">Yes, aware but not involved</option>
+                    <option value="not_aware">No, not aware</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
